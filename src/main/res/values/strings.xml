@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">PayTech</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_product">DESCRIÇÃO PRODUTO</string>
+    <string name="value_product">VALOR PRODUTO</string>
+    <string name="credit">CRÉDITO</string>
+    <string name="debt">DÉBITO</string>
+    <string name="installments">PARCELADO</string>
+    <string name="cash">À VISTA</string>
+    <string name="number_parcel">N° PARCELAS:</string>
+    <string name="payment_methods">FORMAS DE PAGAMENTO</string>
+    <string name="one_parcel">1x de R$ 0,00</string>
+    <string name="two_parcel">2x de R$ 0,00</string>
+    <string name="three_parcel">3x de R$ 0,00</string>
+    <string name="five_parcel">5x de R$ 0,00</string>
+    <string name="seven_parcel">7x de R$ 0,00</string>
+    <string name="eight_parcel">8x de R$ 0,00</string>
+    <string name="ten_parcel">10x de R$ 0,00</string>
+    <string name="twelve_parcel">12x de R$ 0,00</string>
+    <string name="title_summary">RESUMO DO PAGAMENTO</string>
+    <string name="parcelSummary">PARCELAS</string>
+    <string name="payment_method">PAGAMENTO</string>
+    <string name="go_to_summary">IR AO RESUMO</string>
+    <string name="btn_send_payment">ENVIAR PAGAMENTO</string>
+    <string name="btn_back">Botão de voltar a tela principal</string>
+    <string name="value_title">VALOR :</string>
+    <string name="four_parcel">4x de R$ 0,00</string>
+    <string name="six_parcel">6x de R$ 0,00</string>
+    <string name="nine_parcel">9x de R$ 0,00</string>
+    <string name="eleven_parcel">11x de R$ 0,00</string>
+    <string name="description">DESCRIÇÃO</string>
+
+
+</resources>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".fragments.MainFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/cardview_shadow_end_color"
+        app:counterTextColor="@color/white"
+        app:helperTextTextColor="@color/white"
+        app:hintTextColor="@color/purple_app"
+        app:placeholderTextColor="@color/white"
+        app:prefixTextColor="@color/white"
+        app:suffixTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tx_description_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input_purple"
+            android:hint="@string/description_product"
+            android:inputType="textImeMultiLine"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/cardview_shadow_end_color"
+        app:counterTextColor="@color/white"
+        app:helperTextTextColor="@color/white"
+        app:hintTextColor="@color/purple_app"
+        app:placeholderTextColor="@color/white"
+        app:prefixTextColor="@color/white"
+        app:suffixTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tx_value_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input_purple"
+            android:hint="@string/value_product"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/payment_methods"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/view_line_left"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/purpleSecond_app"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/rg_payment_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/credit"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/rb_debit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/debt"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
+            tools:ignore="TextContrastCheck" />
+
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rg_number_parcel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <RadioButton
+                android:id="@+id/rb_parcel1x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/one_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rb_parcel2x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="false"
+                android:text="@string/two_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_parcel3x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="false"
+                android:text="@string/three_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_parcel4x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="false"
+                android:text="@string/four_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_parcel5x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="false"
+                android:text="@string/five_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_parcel6x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="false"
+                android:text="@string/six_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_parcel7x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="false"
+                android:text="@string/seven_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_parcel8x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="false"
+                android:text="@string/eight_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_parcel9x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="false"
+                android:text="@string/nine_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_parcel10x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="false"
+                android:text="@string/ten_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_parcel11x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="false"
+                android:text="@string/eleven_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_parcel12x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radiobutton_parcel_state"
+                android:button="@color/cardview_shadow_end_color"
+                android:checked="false"
+                android:text="@string/twelve_parcel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+
+        </RadioGroup>
+    </ScrollView>
+</LinearLayout>
